@@ -1,0 +1,35 @@
+# SessionMessage model
+# Wrapper for all session communications: Pointer, Frame, and WebRTC Signaling
+
+class: SessionMessage
+
+fields:
+  ### The session/room ID
+  sessionId: String
+
+  ### Pointer event data
+  pointer: PointerEvent?
+  
+  ### Frame data (Deprecated: shifting to WebRTC)
+  frame: FrameEvent?
+  
+  ### Server timestamp
+  timestamp: DateTime
+  
+  ### Signaling: Type (offer, answer, candidate, bye)
+  signalingType: String?
+  
+  ### Signaling: Session Description Protocol (SDP)
+  sdp: String?
+  
+  ### Signaling: ICE Candidate
+  candidate: String?
+  
+  ### Signaling: ICE Candidate ID
+  sdpMid: String?
+  
+  ### Signaling: ICE Candidate Index
+  sdpMlineIndex: int?
+
+  ### Optional session passcode for security
+  passcode: String?

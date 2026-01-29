@@ -1,0 +1,7 @@
+class: LumeSession
+table: lume_session
+fields:
+  roomId: String
+  groupId: String?
+  status: SessionStatus
+  createdAt: DateTime

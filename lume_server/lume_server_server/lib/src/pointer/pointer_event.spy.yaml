@@ -1,0 +1,37 @@
+# PointerEvent model for real-time cursor synchronization
+# This model represents pointer movements and clicks that are streamed
+# between Butler and Client users in a session.
+
+class: PointerEvent
+
+# Fields for the pointer event
+fields:
+  ### Normalized X coordinate (0.0 to 1.0)
+  x: double
+  
+  ### Normalized Y coordinate (0.0 to 1.0)
+  y: double
+  
+  ### Normalized horizontal scroll offset (0.0 to 1.0)
+  scrollX: double?
+  
+  ### Normalized vertical scroll offset (0.0 to 1.0)
+  scrollY: double?
+  
+  ### Session/Room identifier
+  sessionId: String
+  
+  ### Event type: 'move', 'click', 'ping', 'action'
+  type: String
+  
+  ### Action type for 'action' events: 'look_here', 'check_box', 'scroll'
+  action: String?
+  
+  ### Optional message or data for the action
+  message: String?
+  
+  ### Timestamp for event ordering
+  timestamp: DateTime
+  
+  ### User identifier
+  userId: String?

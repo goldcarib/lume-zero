@@ -1,0 +1,18 @@
+# FrameEvent model for screen sharing
+# Transmits compressed screen capture frames from Host to Client
+
+class: FrameEvent
+
+fields:
+  ### Session identifier
+  sessionId: String
+  
+  ### Compressed image data (JPEG/WebP)
+  data: ByteData
+  
+  ### Frame numbering or timestamp
+  timestamp: DateTime
+  
+  ### Optional: Dimensions (if needed for scaling)
+  width: int?
+  height: int?

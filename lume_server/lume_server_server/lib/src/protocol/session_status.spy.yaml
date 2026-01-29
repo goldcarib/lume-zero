@@ -1,0 +1,5 @@
+enum: SessionStatus
+values:
+  - waiting    # Host is in queue, no helper yet
+  - active     # Helper has joined
+  - closed     # Session ended

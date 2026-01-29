@@ -1,0 +1,7 @@
+class: LumeGroup
+table: lume_group
+fields:
+  name: String
+  encryptedAiConfig: String
+  knowledgeBase: String?
+  adminHash: String

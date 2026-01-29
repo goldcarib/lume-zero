@@ -1,0 +1,24 @@
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+jwtRefresh:
+  - refreshAccessToken:
+greeting:
+  - hello:
+pointerStream:
+  - subscribe:
+  - broadcast:
+  - getSessionClientCount:
+group:
+  - createGroup:
+  - getGroup:
+  - updateGroupSettings:
+queue:
+  - requestSupport:
+  - getWaitingSessions:
+  - startAssisting:
