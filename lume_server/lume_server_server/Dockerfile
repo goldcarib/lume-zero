@@ -35,5 +35,9 @@ EXPOSE 8080
 EXPOSE 8081
 EXPOSE 8082
 
+# Copy startup script
+COPY run-render.sh .
+RUN chmod +x run-render.sh
+
 # Define the entrypoint command
-ENTRYPOINT ./server --mode=$runmode --server-id=$serverid --logging=$logging --role=$role
+ENTRYPOINT ["./run-render.sh"]
