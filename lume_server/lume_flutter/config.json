@@ -1,0 +1,4 @@
+{
+    "serverUrl": "https://lume-zero.onrender.com/",
+    "note": "Change serverUrl to your hosted URL for production, or local IP for LAN testing."
+}
