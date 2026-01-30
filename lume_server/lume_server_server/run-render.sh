@@ -19,6 +19,10 @@ staging:
 production:
   database: '${DB_PASS}'
   redis: '${REDIS_PASS}'
+  serviceSecret: '${LUME_SERVICE_SECRET}'
+  emailSecretHashPepper: '${LUME_EMAIL_PEPPER}'
+  jwtHmacSha512PrivateKey: '${LUME_JWT_PRIVATE_KEY}'
+  jwtRefreshTokenHashPepper: '${LUME_JWT_PEPPER}'
 EOF
 
 # 2. Generate config/production.yaml
